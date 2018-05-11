@@ -32,6 +32,10 @@ api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 conn = 'mongodb://localhost:27017'
 client = pymongo.MongoClient(conn)
 
+# Define database and collection
+db = client.Mars
+collection = db.facts
+
 
 def init_browser():
     executable_path = {"executable_path": "/Users/tiffanygomez/Downloads/chromedriver"}
