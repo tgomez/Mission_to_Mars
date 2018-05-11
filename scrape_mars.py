@@ -13,7 +13,9 @@ from selenium import webdriver
 import tweepy
 import json
 import time 
-
+from bs4 import BeautifulSoup
+import requests
+import pymongo
 
 
 #Import dependencies needed to get Mars Weather from Twitter
