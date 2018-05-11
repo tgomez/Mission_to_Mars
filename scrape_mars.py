@@ -138,5 +138,10 @@ def scrape():
 
     return mars_data
 
+# Dictionary to be inserted as a MongoDB document
+post = {mars_data}
+
+collection.insert_one(post)
+
 
 
