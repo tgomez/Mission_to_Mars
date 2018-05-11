@@ -28,6 +28,11 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
+# Initialize PyMongo to work with MongoDBs
+conn = 'mongodb://localhost:27017'
+client = pymongo.MongoClient(conn)
+
+
 def init_browser():
     executable_path = {"executable_path": "/Users/tiffanygomez/Downloads/chromedriver"}
     return Browser("chrome", **executable_path, headless=False)
