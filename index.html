@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- #Paul told me to change the sources from "mars.summary" to "mars_data.summary" But i think bc the mongo db is called "mars" not "mars_data" it should be "mars.summary" -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,9 +30,9 @@
       <div class="row">
         <div class="col-md-12">
           <h2>This is the latest Mars news.</h2>
-          <h4>{{mars_data.news_date}}</h4>
-          <h4> {{ mars_data.news_title }}</h4>
-          <p> {{mars_data.summary}} </p>
+          <h4>{{mars.news_date}}</h4>
+          <h4> {{ mars.news_title }}</h4>
+          <p> {{mars.summary}} </p>
         </div>
       </div>
     </div>
