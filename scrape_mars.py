@@ -34,7 +34,7 @@ client = pymongo.MongoClient(conn)
 
 # Define database and collection
 db = client.Mars
-collection = db.facts
+collection = db.Mars
 
 
 def init_browser():
