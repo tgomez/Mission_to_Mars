@@ -141,7 +141,9 @@ def scrape():
 # Dictionary to be inserted as a MongoDB document
 # I know this is wrong, im sorry :(
     
-post = {mars_data}
+post = {
+    'mars_data' : mars_data
+    }
 
 collection.insert_one(post)
 
